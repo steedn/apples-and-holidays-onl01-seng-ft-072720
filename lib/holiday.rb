@@ -29,6 +29,9 @@ holiday_hash.each do |s, h|
   if s ==  :winter
     h.each do |v, i|
       i << supply
+    end
+  end
+
 end
 
 
