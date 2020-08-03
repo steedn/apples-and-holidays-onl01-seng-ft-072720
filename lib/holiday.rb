@@ -28,11 +28,11 @@ def add_supply_to_winter_holidays(holiday_hash, supply)
 holiday_hash.each do |s, h|
   if s ==  :winter
     h.each do |v, i|
-      i << supply
+      V[i] << supply
     end
-    end
+   end
   end
-end
+ end
 
 
 def add_supply_to_memorial_day(holiday_hash, supply)
