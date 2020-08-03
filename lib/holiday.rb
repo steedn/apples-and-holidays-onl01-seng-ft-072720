@@ -22,9 +22,6 @@ def second_supply_for_fourth_of_july(holiday_hash)
 end
 
 def add_supply_to_winter_holidays(holiday_hash, supply)
-  # holiday_hash is identical to the one above
-  # add the second argument, which is a supply, to BOTH the
-  # Christmas AND the New Year's arrays
 holiday_hash.each do |s, h|
   if s ==  :winter
     h.each do |v, i|
@@ -38,7 +35,14 @@ holiday_hash.each do |s, h|
 def add_supply_to_memorial_day(holiday_hash, supply)
   # again, holiday_hash is the same as the ones above
   # add the second argument to the memorial day array
-
+  holiday_hash.each do |s, h|
+    if s ==  :spring
+      h.each do |v, i|
+        i << supply
+      end
+     end
+    end
+   end
 end
 
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
