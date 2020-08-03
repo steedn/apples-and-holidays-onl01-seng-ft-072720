@@ -70,6 +70,7 @@ holiday_hash.each do |i, y|
   y.each do |i,y|
     array << i.to_s.split("_").capitalize!
   end
+  array.join(" ")
 end
 end
 
