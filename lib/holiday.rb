@@ -30,8 +30,8 @@ holiday_hash.each do |s, h|
     h.each do |v, i|
       i << supply
     end
+    end
   end
-
 end
 
 
